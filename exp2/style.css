@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #8bcdcd;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #e6d5b8;
+	font-family: 'Henny Penny', cursive;
+	position: fixed;
+	 top: 0;
+    left: 0;
+    right: 0;
+}
+
+#title{
+	color: #f05454;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+#logo{
+	width: 8%;
+	height: 5%;
+	mix-blend-mode: multiply;
+	
+}
+
+.nav-links{
+	display: flex;
+	font-family: frrff;
+	justify-content: space-around;
+	width: 20%;
+}
+
+.nav-links a{
+	color: #214252;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+div{
+	background-color: #389393;
+	margin: 0 auto;
+	align-content: center;
+}
+
+.section-inner{
+	color: #fa7f72;
+	letter-spacing: 3px;
+	height: 50px;
+	justify-content: space-around;
+}
+
+.section-middle{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  background-color: #f1d4d4;
+  padding: 30px 20px 20px 40px; 
+  padding-bottom: 40px;
+  font-size: 20px;
+
+}
+
+#Home .section-middle img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+#Home .section-middle h1{
+	font-family: 'Henny Penny', cursive; 
+	color: #790c5a; 
+	font-size: 35px;
+}
+#locations .section-middle h1{
+	font-family: 'Henny Penny', cursive; 
+	color: #790c5a; 
+	font-size: 35px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color:#e6d5b8; 
+}
