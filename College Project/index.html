@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>College Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img style="height: 75px; width: 60px" src="img/logo2.png"></a><div class="title"> St. Stephens College</div>
+			<button class="navbar-toggler" type="button" data-toggler="collapse" data-targets="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="courses.html">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#events">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="facultypage.php">Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tour">Tour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- Navigation -->
+
+
+<!--- Image Slider -->
+<div style="background: rgba(0,0,0,.5);" id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div  class="carousel-inner">
+		<div  class="carousel-item active">
+			<img src="img/college1.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">Maychiels Award!</h1>
+				<h2>We are proud to announce that the Maychiels Award for the year 2020 was awarded to our institutuon for having the best collection of books across all libraries</h2>
+				<a href="courses.html"><button type="button" class="btn btn-outline-light btn-lg">View Award</button></a>
+				<a href="contacts.html"><button type="button" class="btn btn-primary btn-lg">Know More</button></a>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/college2.jpg">
+		</div>
+		<div class="carousel-item">
+			<img src="img/college5.jpg">
+		</div>
+	</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">Due to the Covid-19 pandemic we have revised our admission process. Please click on the button to read more.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"><button class="btn btn-outline-secondary">Know More</button></a>
+		</div>
+	</div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Courses</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead">
+		We offer very extensive courses in all fields such as Medicine, Law, Engineering, Arts. 
+		</p>
+	</div>
+</div>	
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-pencil-alt"></i>
+			<h3>ARTS</h3>
+			<p>Arts section has many well-known alumnis</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-heartbeat"></i>
+			<h3>BIOLOGY</h3>
+			<p>We have the most robust system of Biology</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>CODING</h3>
+			<p>Computer Science course with ML/DL/AI</p>
+		</div>
+	</div>
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-gavel"></i>
+			<h3>LAW</h3>
+			<p>Arts section has many well-known alumnis</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-euro-sign"></i>
+			<h3>COMMERCE</h3>
+			<p>This subject is taught by our very expert faculty</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fas fa-tree"></i>
+			<h3>EVS</h3>
+			<p>EVS is one of the most sought after courses</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2>Beach Clean-Up Drive</h2>
+		<p>
+			"Students from the St. Stephens College attended the drive on the first day. A coastal rally was taken out on the occasion and the volunteers also participated in a signature campaign pledging to keep the beaches clean. Over the course of the week, the volunteers will clean the beaches under the Green Protocol.
+		</p>
+		<p>
+			Hon'ble Mayor of the city was alos present to boost the confidence of the students. This was the third drive whicch was organised by the students of our college.
+		</p>
+		<p>
+			Since past 9 years St. Stephens has sponsored more than a hudred such clean-up drives.
+		</p>
+		<br>	
+		<a href="#" class="btn btn-primary">Learn More</a>
+	</div>
+	<div class="col-lg-6">
+		<img style="width: 70%; height: 90%;" src="img/beach.jpg" class="img-fluid">
+	</div>
+</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed"></div>
+	</div>
+</figure>
+
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">Click for latest information </button>
+ <div id="emoji" class="collapse">
+ 	<div class="container-fluid padding">
+ 		<div  class="row text-center">
+ 			<div class="col-sm-6 col-md-3">
+ 				<img class="gif" src="img/gif/book.gif">
+ 			</div>
+ 			<div class="col-sm-6 col-md-3">
+ 				<img class="gif" src="img/gif/square.gif">
+ 			</div>
+ 			<div class="col-sm-6 col-md-3">
+ 				<img class="gif" src="img/gif/doctors.gif">
+ 			</div>
+ 			<div class="col-sm-6 col-md-3">
+ 				<img class="gif" src="img/gif/giphy.gif">
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+<!--- Meet the team -->
+<div id="events" class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Events</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/singing.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Medley on Zoom</h4>
+					<p class="card-text">"Theatre on Zoom" is a new concept by the students of St. Stephens college. Following social distancing norms and protocol the act will be performed online but worry not all the dynamism is still included.</p>
+					<a href="#" class="btn btn-outline-secondary">Know More</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/hack.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Hackathon Rev 2.0</h4>
+					<p class="card-text">The most awaited hackathon of the season is back with Rev 2.0. The event will be held online. Limited seats for participation Click on the button to register</p><br>
+					<a href="#" class="btn btn-outline-secondary">Know More</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/bl.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Plasma Donation</h4>
+					<p class="card-text">Given the current Covid-19 crisis, St. Stephens college is organising a Plasma Donation Camp at our Campus. Click on the given button to register as a volunteer. Hurry up in the good work</p>
+					<a href="#" class="btn btn-outline-secondary">Know More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div id="about" class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2>About Us</h2>
+		<p>
+			St. Stephen's College is a premiere college of the University of Delhi. The institution has produced distinguished alumni in fields like politics, law, journalism, film, business and many others. It was established by the Cambridge Mission to Delhi. The college admits both undergraduates and post-graduates and awards degrees in liberal arts and sciences under the purview of the University of Delhi.
+		</p>
+		<p>
+			With the closure of Government College, Delhi in 1879 because of financial problems, Reverend Thomas Valpy French, immediately urged the Cambridge Mission, an Anglican mission organised by the alumni of University of Cambridge, to fill the breach. The other major aim for the foundation of the college was response to British Indian Government's policy of promoting English education in India. It was the Reverend Samuel Scott Allnutt of St. John's College, Cambridge, who was mainly responsible for founding the college.
+		</p>
+	</div>
+	<div class="col-lg-6">
+		<img src="img/stephens.jpg" class="img-fluid">
+	</div>
+</div>
+<hr class="my-4">
+</div>
+
+<div id="tour" class="container-fluid padding">
+	<div class="row text-center padding">
+	<div class="container">
+		<h1>Book A Campus Visit Now</h1>
+		<form id="registration_form">
+			<div>
+				<input type="text" id="form_fname" name="" required="">
+				<span class="error_form" id="fname_error_message"></span>
+				<label>
+					First Name
+				</label>	
+			</div>
+			<div>
+				<input type="text" id="form_sname" name="" required="">
+				<span class="error_form" id="sname_error_message"></span>
+				<label>
+					Second Name
+				</label>	
+			</div>
+			<div>
+				<input type="email" id="form_email" name="" required="">
+				<span class="error_form" id="email_error_message"></span>
+				<label>Email id</label>	
+			</div>
+			<div>
+				<input type="contact" id="form_password" name="" required="">
+				<span class="error_form" id="password_error_message"></span>
+				<label>Contact No</label>	
+			</div>
+			<input class="btn btn-outline-secondary" type="submit" value="Register" name="">
+		</form>
+	</div></div>
+	<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+		<div class="container">
+			<h1>Location</h1>
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.159995309387!2d72.82883051437528!3d18.968540160271846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce40ffcfcacd%3A0x5d71ff22760f8e77!2sM.H.%20Saboo%20Siddik%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1606664051050!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+</div></div></div></div>
+</div>
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.facebook.com/ecosoc.ssc/"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/ststephensclg?lang=en"><i class="fab fa-twitter"></i></a>
+			<a href="https://en.wikipedia.org/wiki/St._Stephen%27s_College,_Delhi"><i class="fab fa-google-plus-g"></i></a>
+			<a href="https://www.instagram.com/explore/locations/1029521432/st-stephens-college-delhi/?hl=en"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/watch?v=4vZPIqefl1o"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img style="height: 65px; width: 50px" src="img/logo2.png">
+				<hr class="light">
+				<p>238-874-8398</p>
+				<p>info@ststphens.com</p>
+				<p>100 Raj Ghat Road</p>
+				<p>New Delhi, Delhi (U.T), 110003</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5> Office hours</h5>
+				<hr class="light">
+				<p>Monday 9.00am to 5.00pm</p>
+				<p>Saturday 11.00am to 4.00pm</p>
+				<p>Sunday closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5> Also Reach</h5>
+				<hr class="light">
+				<a href="index.html"><p>Home</p></a>
+				<a href="#about"><p>About</p></a>
+				<a href="#"><p>Courses</p></a>
+				<a href="#"><p>Events</p></a>
+				<a href="#"><p>Tour</p></a>
+				<a href="#"><p>Contact</p></a>
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy; ststephenscollege.com</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+$(function() {
+
+         $("#fname_error_message").hide();
+         $("#sname_error_message").hide();
+         $("#email_error_message").hide();
+         $("#password_error_message").hide();
+         $("#retype_password_error_message").hide();
+
+         var error_fname = false;
+         var error_sname = false;
+         var error_email = false;
+         var error_password = false;
+         var error_retype_password = false;
+
+         $("#form_fname").focusout(function(){
+            check_fname();
+         });
+         $("#form_sname").focusout(function() {
+            check_sname();
+         });
+         $("#form_email").focusout(function() {
+            check_email();
+         });
+         $("#form_password").focusout(function() {
+            check_password();
+         });
+         $("#form_retype_password").focusout(function() {
+            check_retype_password();
+         });
+
+         function check_fname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var fname = $("#form_fname").val();
+            if (pattern.test(fname) && fname !== '') {
+               $("#fname_error_message").hide();
+               $("#form_fname").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#fname_error_message").html("Should contain only Characters");
+               $("#fname_error_message").show();
+               $("#form_fname").css("border-bottom","2px solid #F90A0A");
+               error_fname = true;
+            }
+         }
+
+         function check_sname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var sname = $("#form_sname").val()
+            if (pattern.test(sname) && sname !== '') {
+               $("#sname_error_message").hide();
+               $("#form_sname").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#sname_error_message").html("Should contain only Characters");
+               $("#sname_error_message").show();
+               $("#form_sname").css("border-bottom","2px solid #F90A0A");
+               error_fname = true;
+            }
+         }
+
+         function check_password() {
+            var password_length = $("#form_password").val().length;
+            if (password_length < 8) {
+               $("#password_error_message").html("Atleast 10 Numbers");
+               $("#password_error_message").show();
+               $("#form_password").css("border-bottom","2px solid #F90A0A");
+               error_password = true;
+            } else {
+               $("#password_error_message").hide();
+               $("#form_password").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function check_retype_password() {
+            var password = $("#form_password").val();
+            var retype_password = $("#form_retype_password").val();
+            if (password !== retype_password) {
+               $("#retype_password_error_message").html("Passwords Did not Matched");
+               $("#retype_password_error_message").show();
+               $("#form_retype_password").css("border-bottom","2px solid #F90A0A");
+               error_retype_password = true;
+            } else {
+               $("#retype_password_error_message").hide();
+               $("#form_retype_password").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function check_email() {
+            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $("#form_email").val();
+            if (pattern.test(email) && email !== '') {
+               $("#email_error_message").hide();
+               $("#form_email").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#email_error_message").html("Invalid Email");
+               $("#email_error_message").show();
+               $("#form_email").css("border-bottom","2px solid #F90A0A");
+               error_email = true;
+            }
+         }
+
+         $("#registration_form").submit(function() {
+            error_fname = false;
+            error_sname = false;
+            error_email = false;
+            error_password = false;
+            error_retype_password = false;
+
+            check_fname();
+            check_sname();
+            check_email();
+            check_password();
+            check_retype_password();
+
+            if (error_fname === false && error_sname === false && error_email === false && error_password === false) {
+               alert("Registration Successfull");
+               return true;
+            } else {
+               alert("Please Fill the form Correctly");
+               return false;
+            }
+
+
+         });
+      });
+   </script>
+</body>
+</html>
+
+
+
+
