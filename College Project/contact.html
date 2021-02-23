@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Login Page and Registration</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <style type="text/css">
+      body{
+         background-image: url(img/stephens.jpg); 
+         background-size: cover;
+         background-position: center;
+      }
+      .login-left{
+         background: rgba(211, 211, 211, 0.5);
+         padding: 30px;
+      }
+   </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="index.html"><img style="height: 75px; width: 60px" src="img/logo2.png"></a><div class="title"> St. Stephens College</div>
+         <button class="navbar-toggler" type="button" data-toggler="collapse" data-targets="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html #about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="">Courses</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html #events">Events</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html #tour">Tour</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav><br><br>
+   <div class="container-fluid padding">
+   <div class="row padding">
+      <div class="col-sm-6">
+   <div class="containering">
+      <h1>Contact Us</h1>
+      <form id="registration_form">
+         <div>
+            <input type="text" id="form_fname" name="" required="">
+            <span class="error_form" id="fname_error_message"></span>
+            <label>
+               First Name
+            </label> 
+         </div>
+         <div>
+            <input type="text" id="form_sname" name="" required="">
+            <span class="error_form" id="sname_error_message"></span>
+            <label>
+               Second Name
+            </label> 
+         </div>
+         <div>
+            <input type="email" id="form_email" name="" required="">
+            <span class="error_form" id="email_error_message"></span>
+            <label>Email id</label> 
+         </div>
+         <div>
+            <input type="text" id="form_password" name="" required="">
+            <span class="error_form" id="password_error_message"></span>
+            <label>Message</label> 
+         </div>
+         <input class="btn btn-outline-primary" type="submit" value="Submit" name="">
+      </form>
+   </div>
+</div>
+</div></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <footer>
+   <div class="container-fluid padding">
+      <div class="row text-center">
+         <div class="col-md-4">
+            <img style="height: 65px; width: 50px" src="img/logo2.png">
+            <hr class="light">
+            <p>238-874-8398</p>
+            <p>info@ststphens.com</p>
+            <p>100 Raj Ghat Road</p>
+            <p>New Delhi, Delhi (U.T), 110003</p>
+         </div>
+         <div class="col-md-4">
+            <hr class="light">
+            <h5> Office hours</h5>
+            <hr class="light">
+            <p>Monday 9.00am to 5.00pm</p>
+            <p>Saturday 11.00am to 4.00pm</p>
+            <p>Sunday closed</p>
+         </div>
+         <div class="col-md-4">
+            <hr class="light">
+            <h5> Also Reach</h5>
+            <hr class="light">
+            <a href="index.html"><p>Home</p></a>
+            <a href="#about"><p>About</p></a>
+            <a href="#"><p>Courses</p></a>
+            <a href="#"><p>Events</p></a>
+            <a href="#"><p>Tour</p></a>
+            <a href="#"><p>Contact</p></a>
+         </div>
+         <div class="col-12">
+            <hr class="light">
+            <h5>&copy; ststephenscollege.com</h5>
+         </div>
+      </div>
+   </div>
+</footer>
+   <script type="text/javascript">
+      $(function() {
+
+         $("#fname_error_message").hide();
+         $("#sname_error_message").hide();
+         $("#email_error_message").hide();
+         $("#password_error_message").hide();
+         $("#retype_password_error_message").hide();
+
+         var error_fname = false;
+         var error_sname = false;
+         var error_email = false;
+         var error_password = false;
+         var error_retype_password = false;
+
+         $("#form_fname").focusout(function(){
+            check_fname();
+         });
+         $("#form_sname").focusout(function() {
+            check_sname();
+         });
+         $("#form_email").focusout(function() {
+            check_email();
+         });
+         $("#form_password").focusout(function() {
+            check_password();
+         });
+         $("#form_retype_password").focusout(function() {
+            check_retype_password();
+         });
+
+         function check_fname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var fname = $("#form_fname").val();
+            if (pattern.test(fname) && fname !== '') {
+               $("#fname_error_message").hide();
+               $("#form_fname").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#fname_error_message").html("Should contain only Characters");
+               $("#fname_error_message").show();
+               $("#form_fname").css("border-bottom","2px solid #F90A0A");
+               error_fname = true;
+            }
+         }
+
+         function check_sname() {
+            var pattern = /^[a-zA-Z]*$/;
+            var sname = $("#form_sname").val()
+            if (pattern.test(sname) && sname !== '') {
+               $("#sname_error_message").hide();
+               $("#form_sname").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#sname_error_message").html("Should contain only Characters");
+               $("#sname_error_message").show();
+               $("#form_sname").css("border-bottom","2px solid #F90A0A");
+               error_fname = true;
+            }
+         }
+
+         function check_password() {
+            var password_length = $("#form_password").val().length;
+            if (password_length < 8) {
+               $("#password_error_message").html("Atleast 8 Characters");
+               $("#password_error_message").show();
+               $("#form_password").css("border-bottom","2px solid #F90A0A");
+               error_password = true;
+            } else {
+               $("#password_error_message").hide();
+               $("#form_password").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function check_retype_password() {
+            var password = $("#form_password").val();
+            var retype_password = $("#form_retype_password").val();
+            if (password !== retype_password) {
+               $("#retype_password_error_message").html("Passwords Did not Matched");
+               $("#retype_password_error_message").show();
+               $("#form_retype_password").css("border-bottom","2px solid #F90A0A");
+               error_retype_password = true;
+            } else {
+               $("#retype_password_error_message").hide();
+               $("#form_retype_password").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function check_email() {
+            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $("#form_email").val();
+            if (pattern.test(email) && email !== '') {
+               $("#email_error_message").hide();
+               $("#form_email").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#email_error_message").html("Invalid Email");
+               $("#email_error_message").show();
+               $("#form_email").css("border-bottom","2px solid #F90A0A");
+               error_email = true;
+            }
+         }
+
+         $("#registration_form").submit(function() {
+            error_fname = false;
+            error_sname = false;
+            error_email = false;
+            error_password = false;
+            error_retype_password = false;
+
+            check_fname();
+            check_sname();
+            check_email();
+            check_password();
+            check_retype_password();
+
+            if (error_fname === false && error_sname === false && error_email === false) {
+               alert("Submitted Successfull");
+               return true;
+            } else {
+               alert("Please Fill the form Correctly");
+               return false;
+            }
+
+
+         });
+      });
+   </script>
+</body>
+</html>

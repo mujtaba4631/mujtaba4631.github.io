@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page and Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+			background-image: url(img/stephens.jpg); 
+			background-size: cover;
+			background-position: center;
+		}
+		.login-left{
+			background: rgba(211, 211, 211, 0.5);
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img style="height: 75px; width: 60px" src="img/logo2.png"></a><div class="title"> St. Stephens College</div>
+			<button class="navbar-toggler" type="button" data-toggler="collapse" data-targets="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html #about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="courses.html">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html #events">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html #tour">Tour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><br><br>
+<div class="containering">
+	<div class="row">
+		<div  class="col-md-6">
+			<h2> Login Here</h2>
+			<form action="index.html" method="post">
+				<div id="login-left" class="form-group">
+					<label>Username</label>
+					<input type="text" name="user" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" name="password" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form>
+		</div>
+		<div id="login-right" class="col-md-6">
+			<h2> Register</h2>
+			<form action="validation.php" method="post">
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" name="user" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" name="password" class="form-control">
+				</div>
+				<button type="submit" onclick="showAlert(Registred Successfully!)" class="btn btn-primary"> Register</button>
+			</form>
+		</div></div>
+</div>
+
+</body>
+</html>
